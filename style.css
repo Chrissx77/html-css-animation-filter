@@ -149,9 +149,36 @@
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+
+
+/* ESERCIZIO 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon {
+    animation: spin2 1s linear infinite;
+}
+
+@keyframes spin2 {
+    75%{
+        transform: rotate(320deg);
+    }
+}
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -180,4 +207,127 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+.ex-12-top-white{
+    animation: spin3 1s linear infinite;
+}
+
+.ex-12-bottom-white{
+    animation: spin4 1s linear infinite;
+
+}
+
+@keyframes spin3{
+    0%{
+        left: 0;
+        top: -10;
+    }
+
+    50%{
+        left: calc(100% - 60px);
+        top: -10;
+    }
+
+    100%{
+        left: 0;
+        top: -10;
+    }
+}
+
+@keyframes spin4{
+    0%{
+        right: 0;
+        top: -10;
+    }
+
+    50%{
+        right: calc(100% - 60px);
+        top: -10;
+    }
+
+    100%{
+        right: 0;
+        top: -10;
+    }
+}
+
+
+
+/* ESERCIZIO 13 */
+.ex-13-top-white{
+    animation: spin5 5s linear infinite;
+}
+
+.ex-13-bottom-white{
+    animation: spin6 5s linear infinite;
+}
+
+@keyframes spin5{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+
+    30%{
+        left:calc(100% - 30px);
+        top: -10px;
+    }
+
+    45%{
+        left:calc(100% - 30px);
+        top: 100%;
+
+    }
+
+    75%{
+        left: 0;
+        top: 100%;
+
+    }
+
+    90%{
+        left: -15px;
+        top: -10px;
+    }
+    
+    100%{
+        left: 0;
+        top: -10px;
+    }
+}
+
+@keyframes spin6{
+    0%{
+        right: 10%;
+        bottom: -10px;
+    }
+
+    30%{
+        right:calc(100% - 30px);
+        bottom: -10px;
+    }
+
+    45%{
+        right: calc(100% - 30px);
+        bottom: 100%;
+
+    }
+
+    75%{
+        right: 0;
+        bottom: 100%;
+
+    }
+
+    90%{
+        right: -15px;
+        bottom: -10px;
+    }
+    
+    100%{
+        right: 10%;
+        bottom: -10px;
+    }
 }
